@@ -1,0 +1,65 @@
+@import 'variables.scss';
+@import 'common.scss';
+
+.container {
+  max-width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+  line-height: 25px;
+  padding-top: 39px;
+  background-color: #f3c6bd;
+  &__top {
+    display: flex;
+    height: 62px;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  &__img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__description {
+    color: $text-color-secondary;
+  }
+}
+
+.navigation {
+  margin-left: auto;
+  margin-right: 57px;
+
+  &__item {
+    display: inline-block;
+    margin-top: 7px;
+    text-decoration: none;
+    &_selected {
+      font-weight: 700;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 42px;
+  }
+
+  &__arrow {
+    display: inline-block;
+    margin-left: 11px;
+    padding-bottom: 2px;
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png');
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 5px;
+  }
+}

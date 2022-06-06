@@ -1,0 +1,103 @@
+@import 'variables.scss';
+
+.footer {
+  max-height: 389px;
+  padding-top: 43px;
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 54px;
+  }
+
+  &__description {
+    margin-top: 22px;
+    margin-bottom: 31px;
+    color: $text-color-secondary;
+    line-height: 26px;
+  }
+
+  &__line {
+    border: 1px solid $text-color-primary;
+    opacity: 0.1;
+  }
+
+  &__links {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.about__company {
+  flex-basis: 33%;
+  margin-right: 111px;
+}
+
+.downloads {
+  display: flex;
+  &__img_appleapp {
+    width: 135px;
+    height: 40px;
+    cursor: pointer;
+  }
+  &__img_googleapp {
+    width: 116px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  &__link:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.additional-navigation {
+  display: flex;
+  flex-grow: 1;
+  &__column:not(:last-child) {
+    margin-right: 90px;
+  }
+}
+
+.nav-links {
+  &__title {
+    margin-bottom: 18px;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+    list-style-type: none;
+  }
+
+  &__list-item:not(:last-child) {
+    margin-bottom: 6px;
+  }
+
+  &__list-link {
+    color: $text-color-secondary;
+  }
+}
+
+.terms {
+  &__links {
+    color: $text-color-secondary;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &__links:not(:last-child) {
+    margin-right: 13px;
+  }
+}
+
+.social-links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
