@@ -1,0 +1,26 @@
+.about {
+  padding: 76px 0;
+  background-color: #f4f5f7;
+  &__wrapper {
+    display: flex;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 22px;
+  }
+
+  &__article {
+    flex-basis: 555px;
+    font-size: 22px;
+    line-height: 32px;
+
+    &:not(:last-child) {
+      margin-right: 29px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+  }
+}
