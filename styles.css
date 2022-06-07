@@ -19,12 +19,6 @@
   cursor: pointer;
 }
 
-.container {
-  max-width: 1160px;
-  padding: 0 10px;
-  margin: 0 auto;
-}
-
 .header {
   line-height: 25px;
   padding-top: 39px;
@@ -296,6 +290,131 @@
   filter: brightness(0);
 }
 
+.features {
+  padding-bottom: 103px;
+  position: relative;
+}
+.features::before {
+  content: "";
+  position: absolute;
+  top: 257px;
+  left: -37px;
+  width: 167px;
+  height: 167px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/hidden-ouch.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.features::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -193px;
+  width: 1086px;
+  height: 597px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/invision-screen.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.features__inner {
+  max-width: 462px;
+}
+.features__subtitle {
+  margin-bottom: 24px;
+  font-size: 22px;
+  line-height: 34px;
+  color: #009b4d;
+}
+.features__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+}
+.features__description {
+  margin: 0;
+  margin-bottom: 42px;
+  font-size: 24px;
+  line-height: 34px;
+}
+.features__advantage {
+  border-bottom: 3px solid #3142c6;
+  margin-bottom: 22px;
+}
+.features__subtitle-aquire {
+  position: relative;
+  margin-bottom: 8px;
+  padding-left: 41px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #3142c6;
+}
+.features__subtitle-aquire::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-compas.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.features__aquire-description {
+  padding: 0;
+  line-height: 26px;
+  margin-bottom: 20px;
+  margin-top: 7px;
+}
+.features__item {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+}
+.features__item_building {
+  position: relative;
+  padding-left: 38px;
+  padding-bottom: 21px;
+  margin-bottom: 21px;
+  border-bottom: 1px solid rgba(43, 41, 45, 0.1490196078);
+}
+.features__item_building::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 25px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-building.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.features__item_bucket {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid rgba(43, 41, 45, 0.1490196078);
+}
+.features__item_bucket::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-bucket.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -309,6 +428,12 @@ body {
   font-weight: 400;
   color: rgb(43, 41, 45);
   background-color: #fff;
+}
+
+.container {
+  max-width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 a {

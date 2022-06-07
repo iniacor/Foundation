@@ -5,6 +5,7 @@
 @import 'footer.scss';
 @import 'common.scss';
 @import 'customers.scss';
+@import 'features.scss';
 
 * {
   box-sizing: border-box;
@@ -19,6 +20,13 @@ body {
   color: $text-color-primary;
   background-color: #fff;
 }
+
+.container {
+  max-width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 a {
   color: $text-color-primary;
   text-decoration: none;
