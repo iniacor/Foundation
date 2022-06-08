@@ -1,3 +1,4 @@
+@import 'variables';
 .active-button {
   width: 160px;
   height: 48px;
@@ -7,14 +8,36 @@
   font-weight: 700;
   background-color: $bc-color-accent;
   border-radius: 2px;
+  box-shadow: none;
+  transition: transform 0.5s;
   cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:active {
+    color: $text-color-active-btn;
+  }
+  &:focus {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%);
+  }
 }
 
 .learn-more-button {
+  display: inline-block;
   background-color: #fff;
   color: $bc-color-darkblue;
-  padding: 14px 28px;
+  padding: 17px 28px;
   font-weight: 700;
   line-height: 13px;
+  transition: transform 0.5s;
   cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:active {
+    color: $text-color-active-learbtn;
+  }
+  &:focus {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%);
+  }
 }

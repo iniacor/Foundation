@@ -8,6 +8,7 @@
 @import 'features.scss';
 @import 'inbox.scss';
 @import 'communication.scss';
+@import 'audience.scss';
 
 * {
   box-sizing: border-box;
@@ -32,5 +33,9 @@ body {
 a {
   color: $text-color-primary;
   text-decoration: none;
+  transition: color 0.5s;
   cursor: pointer;
+  &:hover {
+    color: $text-color-hover-link;
+  }
 }
