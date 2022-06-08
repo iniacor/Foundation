@@ -6,6 +6,7 @@
 @import 'common.scss';
 @import 'customers.scss';
 @import 'features.scss';
+@import 'inbox.scss';
 
 * {
   box-sizing: border-box;
@@ -13,12 +14,12 @@
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   font-size: 18px;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   color: $text-color-primary;
-  background-color: #fff;
+  background-color: $bc-color-white;
 }
 
 .container {

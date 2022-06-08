@@ -1,4 +1,5 @@
 @import 'variables.scss';
+
 .features {
   padding-bottom: 103px;
   position: relative;
@@ -10,19 +11,6 @@
     width: 167px;
     height: 167px;
     background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/hidden-ouch.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -193px;
-    width: 1086px;
-    height: 597px;
-    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/invision-screen.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -131,5 +119,12 @@
         background-position: center;
       }
     }
+  }
+
+  &__banner {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }

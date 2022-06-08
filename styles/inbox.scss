@@ -1,0 +1,95 @@
+@import 'variables';
+.inbox {
+  background-color: $bc-color-beige;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &__inner {
+    display: flex;
+  }
+  &__img {
+    max-width: 100%;
+    flex-basis: 425px;
+    flex-grow: 1;
+    margin-right: 161px;
+  }
+  &__img-decor {
+    margin-bottom: 15px;
+  }
+
+  &__img-caption {
+    text-align: right;
+  }
+
+  &__content {
+    flex-basis: 519px;
+    flex-grow: 1;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: $text-color-orange;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+  }
+
+  &__text {
+    padding-left: 30px;
+    max-width: 500px;
+    margin-bottom: 44px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  &__card {
+    background-color: $bc-color-white;
+    padding: 30px;
+  }
+}
+.blockquote {
+  margin: 0;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 26px;
+}
+.cite-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 54px;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-avatar.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  &__author {
+    font-weight: 700;
+  }
+  &__position {
+    color: $text-color-secondary;
+  }
+}
