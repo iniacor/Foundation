@@ -1,6 +1,9 @@
 @import 'variables';
 @import 'common.scss';
-
+.test {
+  font-size: 50px;
+  font-weight: 700;
+}
 .headline {
   &__wrapper {
     padding-top: 77px;
@@ -17,8 +20,6 @@
     margin-top: 0;
     width: 754px;
     height: 165px;
-    font-size: 80px;
-    line-height: 78px;
     letter-spacing: -1px;
     margin-bottom: 32px;
   }

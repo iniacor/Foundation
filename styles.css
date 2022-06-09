@@ -1,3 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1;
+}
+
+h1 {
+  font-size: calc(
+    50px + 30 * ((100vw - 320px) / 1080)
+  );
+}
+
+h2 {
+  font-size: calc(
+    40px + 16 * ((100vw - 320px) / 1080)
+  );
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: #2b292d;
+  text-decoration: none;
+  transition: color 0.5s;
+  cursor: pointer;
+}
+a:hover {
+  color: #3040c4;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
 .active-button {
   width: 160px;
   height: 48px;
@@ -28,6 +72,7 @@
   padding: 17px 28px;
   font-weight: 700;
   line-height: 13px;
+  border-radius: 2px;
   transition: transform 0.5s;
   cursor: pointer;
 }
@@ -152,6 +197,7 @@
   padding: 17px 28px;
   font-weight: 700;
   line-height: 13px;
+  border-radius: 2px;
   transition: transform 0.5s;
   cursor: pointer;
 }
@@ -163,6 +209,11 @@
 }
 .learn-more-button:focus {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.test {
+  font-size: 50px;
+  font-weight: 700;
 }
 
 .headline__wrapper {
@@ -178,8 +229,6 @@
   margin-top: 0;
   width: 754px;
   height: 165px;
-  font-size: 80px;
-  line-height: 78px;
   letter-spacing: -1px;
   margin-bottom: 32px;
 }
@@ -323,6 +372,7 @@
   padding: 17px 28px;
   font-weight: 700;
   line-height: 13px;
+  border-radius: 2px;
   transition: transform 0.5s;
   cursor: pointer;
 }
@@ -384,9 +434,6 @@
 .features__title {
   margin: 0;
   margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 56px;
   letter-spacing: -0.5px;
 }
 .features__description {
@@ -514,8 +561,6 @@
   margin-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
-  font-size: 56px;
-  line-height: 56px;
   letter-spacing: -0.5px;
 }
 .inbox__text {
@@ -594,8 +639,6 @@
 .communication__title {
   margin: 0;
   margin-bottom: 30px;
-  font-size: 56px;
-  line-height: 56px;
   letter-spacing: -0.5px;
 }
 .communication__top-text {
@@ -653,8 +696,6 @@
 .audience__title {
   margin: 0;
   margin-bottom: 30px;
-  font-size: 56px;
-  line-height: 56px;
   letter-spacing: -0.5px;
 }
 .audience__text {
@@ -745,11 +786,11 @@
   font-size: 0;
   border: 0;
   border-radius: 50%;
-  transition: transform 0.5s;
+  transition: all 0.5s;
   cursor: pointer;
 }
 .feedback-slider .slick-dots button:hover {
-  transform: scale(1.3);
+  background-color: #0189d1;
 }
 .feedback-slider .slick-dots li {
   display: flex;
@@ -757,6 +798,8 @@
 }
 .feedback-slider .slick-dots .slick-active button {
   background-color: #3141c5;
+  box-shadow: 1px 1px 2px rgba(54, 50, 134, 0.9);
+  transform: scale(1.3);
 }
 
 .blockquote-feedback {
@@ -774,8 +817,94 @@
   line-height: 24px;
 }
 
-* {
-  box-sizing: border-box;
+.hiring {
+  padding-top: 106px;
+  padding-bottom: 110px;
+}
+.hiring__inner {
+  margin: auto;
+  max-width: 750px;
+}
+.hiring__description {
+  margin: auto;
+  text-align: center;
+  max-width: 555px;
+}
+.hiring__title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.hiring__about-text {
+  margin: 0;
+  margin-bottom: 28px;
+  font-size: 24px;
+  line-height: 34px;
+}
+.hiring__link {
+  display: flex;
+  margin: auto;
+  margin-bottom: 110px;
+  align-items: center;
+  justify-content: center;
+  width: 247px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 13px;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #3040c4;
+  transition: all 0.5s;
+}
+.hiring__link:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+.hiring__link:active {
+  color: #ed526d;
+}
+.hiring__link:focus {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.vacancy-block__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px;
+  border: 1px solid rgba(43, 41, 45, 0.231372549);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.vacancy-block__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.vacancy-block__item:hover {
+  background-color: #3141c5;
+  color: #fff;
+}
+.vacancy-block__item:hover .vacancy-block__btn {
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png");
+}
+.vacancy-block__item:hover .vacancy-block__text {
+  color: #fff;
+}
+.vacancy-block__text {
+  margin-left: auto;
+  margin-right: 5px;
+  flex-basis: 250px;
+  color: rgba(43, 41, 45, 0.6);
+}
+.vacancy-block__btn {
+  border: 0;
+  width: 8px;
+  height: 12px;
+  background-color: transparent;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 body {
@@ -793,16 +922,6 @@ body {
   max-width: 1160px;
   padding: 0 10px;
   margin: 0 auto;
-}
-
-a {
-  color: #2b292d;
-  text-decoration: none;
-  transition: color 0.5s;
-  cursor: pointer;
-}
-a:hover {
-  color: #3040c4;
 }
 
 /*# sourceMappingURL=styles.css.map */

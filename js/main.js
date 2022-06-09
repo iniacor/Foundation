@@ -2,7 +2,7 @@ $(function () {
   $('.feedback-slider').slick({
     dots: true,
     arrows: false,
-    speed: 300,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     responsive: [

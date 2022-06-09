@@ -14,3 +14,13 @@ $bc-color-darkblue: #3040c4;
 $bc-color-lightskyblue: #00a1c623;
 $bc-color-beige: #fcf0e3;
 $bc-color-white: #fff;
+
+$maxWidth: 1400;
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+
+  font-size: calc(
+    #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
+  );
+}

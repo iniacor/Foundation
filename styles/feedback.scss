@@ -52,10 +52,10 @@
       font-size: 0;
       border: 0;
       border-radius: 50%;
-      transition: transform 0.5s;
+      transition: all 0.5s;
       cursor: pointer;
       &:hover {
-        transform: scale(1.3);
+        background-color: $text-color-lightblue;
       }
     }
     li {
@@ -64,6 +64,8 @@
     }
     .slick-active button {
       background-color: $bc-color-accent;
+      box-shadow: 1px 1px 2px rgba(54, 50, 134, 0.9);
+      transform: scale(1.3);
     }
   }
 }
