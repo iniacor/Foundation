@@ -6,8 +6,7 @@
     display: flex;
   }
   &__title {
-    margin: 0;
-    margin-bottom: 8px;
+    margin-bottom: 11px;
     font-size: 22px;
   }
 
@@ -19,9 +18,5 @@
     &:not(:last-child) {
       margin-right: 29px;
     }
-  }
-
-  &__text {
-    margin: 0;
   }
 }

@@ -6,7 +6,6 @@
   border-bottom: 1px solid #0000001a;
 
   &__subtitle {
-    margin: 0;
     margin-bottom: 28px;
     text-align: center;
     font-weight: 700;
@@ -38,9 +37,9 @@
   }
   .slick-dots {
     position: absolute;
-    left: 0;
+    left: 13px;
     right: 0;
-    bottom: -38px;
+    bottom: -47px;
     display: flex;
     justify-content: center;
     align-items: center;

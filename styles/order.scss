@@ -12,11 +12,13 @@
 }
 .order-form {
   flex-basis: 550px;
+  margin-left: -85px;
   &__title {
-    margin-bottom: 12px;
+    margin-bottom: 19px;
     font-weight: 700;
     font-size: 40px;
     line-height: 40px;
+    letter-spacing: -0.25px;
   }
   &__text {
     margin-bottom: 26px;
@@ -35,6 +37,9 @@
     height: 48px;
     margin-right: 10px;
     border: 1px solid $border-color;
+    &::placeholder {
+      color: $text-color-primary;
+    }
   }
   &__terms-description {
     font-size: 14px;
@@ -46,8 +51,5 @@
     line-height: 22px;
     text-decoration: underline;
     color: $text-color-blue;
-  }
-  &__terms-caption {
-    display: flex;
   }
 }
