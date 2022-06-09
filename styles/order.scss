@@ -1,0 +1,53 @@
+@import 'variables';
+
+.order {
+  padding-top: 73px;
+  padding-bottom: 73px;
+  background-color: $bc-color-grey;
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.order-form {
+  flex-basis: 550px;
+  &__title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  &__text {
+    margin-bottom: 26px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  &__input-elements {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  &__input {
+    padding: 17px 0 18px 15px;
+    width: 100%;
+    max-width: 385px;
+    height: 48px;
+    margin-right: 10px;
+    border: 1px solid $border-color;
+  }
+  &__terms-description {
+    font-size: 14px;
+    line-height: 22px;
+    color: $text-color-secondary;
+  }
+  &__terms-link {
+    font-size: 14px;
+    line-height: 22px;
+    text-decoration: underline;
+    color: $text-color-blue;
+  }
+  &__terms-caption {
+    display: flex;
+  }
+}

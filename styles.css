@@ -907,6 +907,59 @@ button {
   background-size: contain;
 }
 
+.order {
+  padding-top: 73px;
+  padding-bottom: 73px;
+  background-color: #f4f5f7;
+}
+.order__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.order-form {
+  flex-basis: 550px;
+}
+.order-form__title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+}
+.order-form__text {
+  margin-bottom: 26px;
+  font-size: 22px;
+  line-height: 32px;
+}
+.order-form__input-elements {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.order-form__input {
+  padding: 17px 0 18px 15px;
+  width: 100%;
+  max-width: 385px;
+  height: 48px;
+  margin-right: 10px;
+  border: 1px solid rgba(43, 41, 45, 0.231372549);
+}
+.order-form__terms-description {
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(43, 41, 45, 0.6);
+}
+.order-form__terms-link {
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration: underline;
+  color: #3141c5;
+}
+.order-form__terms-caption {
+  display: flex;
+}
+
 body {
   display: flex;
   flex-direction: column;
