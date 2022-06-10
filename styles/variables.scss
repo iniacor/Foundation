@@ -15,13 +15,14 @@ $bc-color-lightskyblue: #00a1c623;
 $bc-color-beige: #fcf0e3;
 $bc-color-white: #fff;
 $bc-color-grey: #f4f5f7;
+$bc-color-pink: #f3c6bd;
 
 $border-color: #2b292d3b;
 $burger-btn-color: #2c3241a4;
 $sm: 400px;
 
 @mixin for-large-up {
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 540px) {
     @content;
   }
 }
@@ -32,6 +33,14 @@ $maxWidth: 1400;
   $maxWidth: $maxWidth - 320;
 
   font-size: calc(
+    #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
+  );
+}
+@mixin adaptiv-margin-right($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+
+  margin-right: calc(
     #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
   );
 }

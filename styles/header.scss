@@ -4,16 +4,24 @@
 .header {
   line-height: 25px;
   padding-top: 0;
-  background-color: $bc-color-white;
+  background-color: $bc-color-pink;
+  overflow-x: hidden;
   @include for-large-up {
     padding-top: 39px;
-    background-color: #f3c6bd;
   }
 
   &__top {
     display: flex;
     justify-content: space-between;
     height: 62px;
+    width: 100%;
+    background-color: #fff;
+    padding: 0 10px;
+    @include for-large-up {
+      background-color: #f3c6bd;
+      max-width: 1160px;
+      margin: 0 auto;
+    }
   }
 
   &__active-button {
@@ -48,6 +56,7 @@
   &__description {
     display: none;
     color: $text-color-secondary;
+    @include adaptiv-font(18, 12);
     @include for-large-up {
       display: block;
     }
@@ -64,6 +73,7 @@
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: #f3c6bdee;
+  z-index: 2;
   transform: translateY(-200px);
   transition: all 0.6s;
   @include for-large-up {
@@ -72,7 +82,8 @@
     flex-direction: row;
     padding-top: 0;
     padding-bottom: 0;
-    margin-right: 57px;
+    // margin-right: 57px;
+    @include adaptiv-margin-right(57, 10);
     margin-left: auto;
     transform: translateY(0);
     transition: all 0s;
@@ -102,7 +113,8 @@
     }
 
     &:not(:last-child) {
-      margin-right: 48px;
+      // margin-right: 48px;
+      @include adaptiv-margin-right(47, 10);
     }
 
     &_selected {
@@ -138,6 +150,7 @@
   height: 13px;
   background-color: transparent;
   position: relative;
+  z-index: 3;
 
   &__string {
     position: relative;
