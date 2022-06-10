@@ -1,11 +1,11 @@
 $(function () {
   $(window).scroll(function () {
     var height = $(window).scrollTop();
-    if (height >= 64) {
-      $('.header').addClass('header_fix');
+    if (height >= 200) {
+      $('.header__top').addClass('header__top_fix');
       $('.headline').addClass('fix');
     } else {
-      $('.header').removeClass('header_fix');
+      $('.header__top').removeClass('header__top_fix');
       $('.headline').removeClass('fix');
     }
   });
