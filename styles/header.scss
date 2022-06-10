@@ -3,21 +3,41 @@
 
 .header {
   line-height: 25px;
-  padding-top: 39px;
-  background-color: #f3c6bd;
+  padding-top: 0;
+  background-color: $bc-color-white;
+  @include for-large-up {
+    padding-top: 39px;
+    background-color: #f3c6bd;
+  }
+
   &__top {
     display: flex;
+    justify-content: space-between;
     height: 62px;
+  }
+
+  &__active-button {
+    display: none;
+    @include for-large-up {
+      display: block;
+    }
   }
 }
 
 .logo {
   display: flex;
   align-items: center;
+  &__link {
+    display: flex;
+  }
   &__img {
-    width: 66px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
     margin-right: 9px;
+    @include for-large-up {
+      width: 66px;
+      height: 60px;
+    }
   }
 
   &__name {
@@ -26,34 +46,141 @@
   }
 
   &__description {
+    display: none;
     color: $text-color-secondary;
+    @include for-large-up {
+      display: block;
+    }
   }
 }
 
 .navigation {
-  margin-left: auto;
-  margin-right: 57px;
+  position: absolute;
+  left: -10px;
+  right: -10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #f3c6bdee;
+  transform: translateY(-200px);
+  transition: all 0.6s;
+  @include for-large-up {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 57px;
+    margin-left: auto;
+    transform: translateY(0);
+    transition: all 0s;
+  }
+  &_active {
+    transform: translateY(0);
+    transition: all 0.6s;
+  }
 
   &__item {
-    display: inline-block;
-    margin-top: 7px;
-    text-decoration: none;
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: 100%;
+    text-align: center;
+    @include for-large-up {
+      padding-bottom: 0;
+      padding-top: 0;
+      padding-right: 0;
+      padding-left: 0;
+      width: auto;
+      display: inline-block;
+      margin-top: 7px;
+      text-decoration: none;
+    }
+
+    &:not(:last-child) {
+      margin-right: 48px;
+    }
+
     &_selected {
       font-weight: 700;
     }
   }
 
-  &__item:not(:last-child) {
-    margin-right: 42px;
-  }
-
   &__arrow {
-    display: inline-block;
+    display: none;
     margin-left: 11px;
     padding-bottom: 2px;
     background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png');
     background-repeat: no-repeat;
     width: 8px;
     height: 5px;
+    @include for-large-up {
+      display: inline-block;
+    }
+  }
+}
+.sandvich-menu {
+  display: flex;
+  width: 58px;
+  height: 62px;
+  border-left: 1px solid $border-color;
+  @include for-large-up {
+    display: none;
+  }
+}
+.menu-btn {
+  margin: auto;
+  width: 18px;
+  height: 13px;
+  background-color: transparent;
+  position: relative;
+
+  &__string {
+    position: relative;
+    top: 0px;
+    right: 0;
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: $burger-btn-color;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      right: 0;
+      width: 18px;
+      height: 2px;
+      background-color: $burger-btn-color;
+      transition: all 0.3s;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      right: 0;
+      width: 18px;
+      height: 2px;
+      background-color: $burger-btn-color;
+    }
+    &_active {
+      background-color: transparent;
+      transition: all 0.3s;
+
+      &::before {
+        top: 0;
+        transform: rotate(45deg);
+        background-color: $bc-color-accent;
+      }
+
+      &::after {
+        bottom: 0;
+        transform: rotate(-45deg);
+        background-color: $bc-color-accent;
+      }
+    }
   }
 }
