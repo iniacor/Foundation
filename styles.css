@@ -119,19 +119,22 @@ button {
   background-color: #fff;
   padding: 0 10px;
 }
-.header__top_fix {
-  position: fixed;
-  background-color: #fff;
-  z-index: 10;
-  width: 100%;
-  max-width: 1200px;
-}
 @media screen and (min-width: 540px) {
   .header__top {
     background-color: #f3c6bd;
     max-width: 1160px;
     margin: 0 auto;
   }
+}
+.header__top_fix {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  align-items: center;
+  width: 100%;
+  background-color: #f3c6bd;
+  z-index: 10;
 }
 .header__active-button {
   display: none;
@@ -209,6 +212,7 @@ button {
 .navigation_active {
   transform: translateY(0);
   transition: all 0.6s;
+  top: 0;
 }
 .navigation__item {
   display: block;
@@ -631,23 +635,68 @@ button {
 }
 
 .customers {
-  padding-top: 30px;
-  padding-bottom: 106px;
+  padding-top: 0;
+  padding-bottom: calc(
+    48px + 58 * ((100vw - 320px) / 1080)
+  );
 }
-.customers_feedback {
-  padding-top: 43px;
-  padding-bottom: 76px;
+@media screen and (min-width: 540px) {
+  .customers {
+    padding-top: 30px;
+  }
 }
 .customers__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 540px) {
+  .customers__list {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+.customers__list-item {
+  display: flex;
+  border-bottom: 1px solid rgba(43, 41, 45, 0.231372549);
+}
+@media screen and (min-width: 540px) {
+  .customers__list-item {
+    display: block;
+    border-bottom: none;
+  }
+}
+.customers__item {
+  align-items: center;
+  justify-content: center;
+  width: 107px;
+  height: 94px;
+  display: flex;
+}
+.customers__item:not(:last-child) {
+  border-right: 1px solid rgba(43, 41, 45, 0.231372549);
+}
+@media screen and (min-width: 540px) {
+  .customers__item:not(:last-child) {
+    border-bottom: none;
+  }
 }
 .customers__logo {
   filter: brightness(0);
+  max-width: 80%;
+}
+@media screen and (min-width: 540px) {
+  .customers__logo {
+    max-width: 100%;
+  }
+}
+.customers_feedback {
+  padding-top: 43px;
+  padding-bottom: 76px;
 }
 
 .features {

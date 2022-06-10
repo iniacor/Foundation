@@ -18,7 +18,7 @@ $(function () {
     $('.menu-btn__string').toggleClass('menu-btn__string_active');
   });
 
-  $('.navigation__item').on('click', function () {
+  $('.menu-btn').on('click', function () {
     $('.navigation').toggleClass('.navigation_active');
   });
 
