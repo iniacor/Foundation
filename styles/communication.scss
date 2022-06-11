@@ -1,8 +1,12 @@
 @import 'variables';
 
 .communication {
-  padding-top: 110px;
-  padding-bottom: 110px;
+  @include adaptiv-padding-top(110, 50);
+  @include adaptiv-padding-bottom(110, 50);
+  @include for-large-up {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
   &__inner {
     display: flex;
     flex-direction: column;
@@ -10,8 +14,13 @@
 
   &__top {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 43px;
+    margin-bottom: 33px;
+    @include for-large-up {
+      flex-direction: row;
+      margin-bottom: 43px;
+    }
   }
 
   &__content {
@@ -20,34 +29,82 @@
     flex-basis: 462px;
   }
   &__decor {
-    margin-right: 62px;
+    margin: 0;
+    margin-right: 0;
+    @include for-large-up {
+      margin-right: 62px;
+    }
+  }
+  &__img {
+    max-width: 100%;
+    @include for-large-up {
+      max-width: auto;
+    }
   }
 
   &__subtitle {
-    margin-bottom: 24px;
+    margin-bottom: 17px;
     font-weight: 700;
     font-size: 22px;
     line-height: 34px;
     color: $text-color-lightblue;
+    @include for-large-up {
+      margin-bottom: 24px;
+    }
   }
 
   &__title {
-    margin-bottom: 30px;
+    margin-bottom: 18px;
     letter-spacing: -0.5px;
+    @include for-large-up {
+      margin-bottom: 30px;
+    }
   }
 
   &__top-text {
-    margin-bottom: 39px;
+    margin-bottom: 30px;
     font-size: 24px;
     line-height: 34px;
+    @include for-large-up {
+      margin-bottom: 39px;
+    }
   }
   &__button {
-    margin-bottom: 87px;
+    margin-bottom: 40px;
+    @include for-large-up {
+      margin-bottom: 87px;
+    }
+  }
+
+  &__decor {
+    margin-bottom: 40px;
+    @include for-large-up {
+      margin-bottom: 0;
+    }
+  }
+
+  &__img {
+    margin-bottom: 17px;
+    @include for-large-up {
+      margin-bottom: 0;
+    }
   }
 
   &__decor-line {
+    display: none;
+    @include for-large-up {
+      display: block;
+      border: 1px solid #0000001a;
+      max-width: 150px;
+    }
+  }
+  &__decor-line_mobile {
+    display: block;
     border: 1px solid #0000001a;
     max-width: 150px;
+    @include for-large-up {
+      display: none;
+    }
   }
 
   &__img-capture {
@@ -59,12 +116,21 @@
 
   &__bottom {
     display: flex;
+    flex-direction: column;
+    @include for-large-up {
+      flex-direction: row;
+    }
   }
 
   &__item {
     flex-basis: 33.3%;
     &:not(:last-child) {
-      margin-right: 30px;
+      margin-right: 0;
+      margin-bottom: 33px;
+      @include for-large-up {
+        margin-right: 29px;
+        margin-bottom: 0;
+      }
     }
   }
   &__item-text {
