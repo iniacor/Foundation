@@ -24,6 +24,9 @@
     }
   }
   &__img-decor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 42px;
     max-width: 100%;
     @include for-large-up {
