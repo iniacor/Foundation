@@ -1,9 +1,15 @@
 @import 'variables.scss';
 
 .features {
-  padding-bottom: 103px;
   position: relative;
+  padding-bottom: 103px;
+  @include for-small-up {
+    display: none;
+  }
   &::before {
+    @include for-feature-section {
+      display: none;
+    }
     content: '';
     position: absolute;
     top: 257px;
@@ -17,6 +23,9 @@
   }
 
   &__inner {
+    @include for-feature-section {
+      max-width: 100%;
+    }
     max-width: 462px;
   }
 
@@ -66,10 +75,10 @@
   }
 
   &__aquire-description {
-    padding: 0;
-    line-height: 26px;
     margin-bottom: 20px;
     margin-top: 8px;
+    padding: 0;
+    line-height: 26px;
   }
 
   &__item {
@@ -117,9 +126,13 @@
   }
 
   &__banner {
-    display: block;
+    @include for-feature-section {
+      position: static;
+      max-width: 100%;
+    }
     position: absolute;
     top: 0;
     right: 0;
+    display: block;
   }
 }

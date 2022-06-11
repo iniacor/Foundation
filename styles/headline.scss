@@ -1,5 +1,5 @@
 @import 'variables';
-@import 'common.scss';
+@import 'global.scss';
 .test {
   font-size: 50px;
   font-weight: 700;
@@ -25,21 +25,20 @@
   }
 
   &__title {
-    width: auto;
     margin-bottom: 24px;
     @include for-large-up {
       margin-top: -2px;
       margin-bottom: 33px;
-      width: 754px;
+      @include adaptiv-width(700, 290);
       height: 165px;
       letter-spacing: -0.5px;
     }
   }
 
   &__description {
+    margin-bottom: 30px;
     font-size: 24px;
     line-height: 36px;
-    margin-bottom: 30px;
     @include for-large-up {
       line-height: 34px;
       height: 102px;
@@ -50,8 +49,8 @@
 
   .headline__active-button {
     margin-right: 4px;
-    width: 100%;
     margin-bottom: 15px;
+    width: 100%;
     @include for-large-up {
       width: 160px;
       margin-bottom: 0;
@@ -59,9 +58,9 @@
   }
 
   &__learn-more-button {
-    text-align: center;
-    width: 100%;
     margin-bottom: 33px;
+    width: 100%;
+    text-align: center;
     @include for-large-up {
       width: auto;
       margin-bottom: 0;

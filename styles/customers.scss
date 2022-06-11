@@ -1,7 +1,6 @@
 .customers {
   padding-top: 0;
   @include adaptiv-padding-bottom(106, 48);
-
   @include for-large-up {
     padding-top: 30px;
   }
@@ -9,38 +8,54 @@
   &__list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    list-style: none;
     margin: 0;
     padding: 0;
-    flex-wrap: wrap;
+    list-style: none;
     @include for-large-up {
-      justify-content: space-between;
+      // justify-content: center;
       flex-wrap: nowrap;
     }
   }
-  &__list-item {
+
+  &__list-items {
     display: flex;
+    justify-content: space-around;
+    flex: 1;
     border-bottom: 1px solid $border-color;
     @include for-large-up {
-      display: block;
+      justify-content: space-between;
+      width: 100%;
       border-bottom: none;
+      &:not(:last-child) {
+        @include adaptiv-padding-right(138, 50);
+      }
     }
   }
 
   &__item {
-    align-items: center;
+    display: flex;
     justify-content: center;
+    align-items: center;
     width: 107px;
     height: 94px;
-    display: flex;
+    padding-right: 0;
+    @include for-large-up {
+      width: auto;
+      height: auto;
+    }
     &:not(:last-child) {
       border-right: 1px solid $border-color;
       @include for-large-up {
-        border-bottom: none;
+        border-right: none;
+      }
+      @include for-medium-up {
+        @include adaptiv-padding-right(30, 20);
       }
     }
   }
+
   &__logo {
     filter: brightness(0);
     max-width: 80%;

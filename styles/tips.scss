@@ -1,0 +1,50 @@
+@import 'variables';
+
+.tips {
+  @include for-large-up {
+    display: none;
+  }
+}
+.tip {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+    border-bottom: 1px solid $border-color;
+  }
+  &__subtitle {
+    display: inline-block;
+    padding: 0 15px;
+    margin-bottom: 17px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    color: #009b4d;
+  }
+  &__title {
+    margin-bottom: 13px;
+    padding: 0 15px;
+    letter-spacing: -0.357px;
+  }
+  &__description {
+    padding: 0 15px;
+    margin-bottom: 29px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  &__decoration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    margin-bottom: 40px;
+  }
+  &__image {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  &__image-caption {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    color: $text-color-secondary;
+  }
+}

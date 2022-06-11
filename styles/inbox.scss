@@ -1,26 +1,44 @@
 @import 'variables';
 .inbox {
+  @include adaptiv-padding-top(113, 50);
+  @include adaptiv-padding-bottom(84, 50);
   background-color: $bc-color-beige;
-  padding-top: 113px;
-  padding-bottom: 84px;
+  @include for-large-up {
+    padding-top: 113px;
+    padding-bottom: 84px;
+  }
 
   &__inner {
-    display: flex;
+    display: block;
+    @include for-large-up {
+      display: flex;
+    }
   }
   &__img {
-    max-width: 100%;
-    flex-basis: 425px;
-    flex-grow: 1;
-    margin-right: 163px;
+    margin: 0;
+    @include for-large-up {
+      flex-basis: 425px;
+      flex-grow: 1;
+      margin-right: 163px;
+      max-width: 100%;
+    }
   }
   &__img-decor {
-    margin-bottom: 18px;
+    margin-bottom: 42px;
+    max-width: 100%;
+    @include for-large-up {
+      margin-bottom: 18px;
+    }
   }
 
   &__img-caption {
-    text-align: center;
-    font-size: 14px;
-    line-height: 22px;
+    display: none;
+    @include for-large-up {
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 
   &__content {
@@ -29,28 +47,42 @@
   }
 
   &__subtitle {
-    margin-bottom: 24px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-bottom: 17px;
+    padding-left: 0;
+    padding-right: 0;
     color: $text-color-orange;
     font-weight: 700;
     font-size: 22px;
     line-height: 34px;
+    @include for-large-up {
+      margin-bottom: 24px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
 
   &__title {
-    margin-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-bottom: 18px;
+    padding: 0;
     letter-spacing: -0.5px;
+    @include for-large-up {
+      margin-bottom: 30px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
 
   &__text {
-    padding-left: 30px;
-    max-width: 500px;
-    margin-bottom: 44px;
+    padding: 0;
+    margin-bottom: 30px;
+    max-width: 100%;
     font-size: 24px;
     line-height: 34px;
+    @include for-large-up {
+      padding-left: 30px;
+      margin-bottom: 44px;
+      max-width: 500px;
+    }
   }
 
   &__card {
@@ -60,25 +92,25 @@
 }
 .blockquote {
   margin: 0;
+  margin-bottom: 26px;
   font-size: 20px;
   line-height: 28px;
-  margin-bottom: 26px;
 }
 .cite-inner {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
+  padding-left: 54px;
   font-size: 16px;
   line-height: 22px;
-  padding-left: 54px;
   &::before {
     content: '';
     position: absolute;
-    width: 40px;
-    height: 40px;
     top: 0;
     left: 0;
+    width: 40px;
+    height: 40px;
     background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-avatar.png');
     background-repeat: no-repeat;
     background-size: contain;

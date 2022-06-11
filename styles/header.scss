@@ -1,5 +1,5 @@
 @import 'variables.scss';
-@import 'common.scss';
+@import 'global.scss';
 
 .header {
   line-height: 25px;
@@ -31,9 +31,11 @@
       left: 0;
       align-items: center;
       width: 100%;
-      // max-width: 1160px;
-      background-color: $bc-color-pink;
+      background-color: $bc-color-white;
       z-index: 10;
+      @include for-large-up {
+        display: none;
+      }
     }
   }
 
@@ -112,8 +114,8 @@
     padding-top: 10px;
     padding-right: 50px;
     padding-left: 50px;
-    width: 100%;
     text-align: center;
+    width: 100%;
     @include for-large-up {
       padding-bottom: 0;
       padding-top: 0;
@@ -157,11 +159,11 @@
   }
 }
 .menu-btn {
+  position: relative;
   margin: auto;
   width: 18px;
   height: 13px;
   background-color: transparent;
-  position: relative;
   z-index: 3;
 
   &__string {
