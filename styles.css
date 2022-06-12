@@ -286,6 +286,9 @@ button {
     display: block;
   }
 }
+.logo__description-footer {
+  display: block;
+}
 
 .navigation {
   position: absolute;
@@ -670,33 +673,111 @@ button {
 }
 .footer__navigation {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 54px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(43, 41, 45, 0.231372549);
+}
+@media screen and (min-width: 650px) {
+  .footer__navigation {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 54px;
+    border-bottom: none;
+  }
+}
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media screen and (min-width: 650px) {
+  .footer__inner {
+    flex-direction: row;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
 }
 .footer__description {
+  display: none;
   margin-top: 22px;
   margin-bottom: 31px;
   color: rgba(43, 41, 45, 0.6);
   line-height: 26px;
 }
+@media screen and (min-width: 650px) {
+  .footer__description {
+    display: block;
+  }
+}
 .footer__line {
+  display: none;
   border: 1px solid #2b292d;
   opacity: 0.1;
 }
+@media screen and (min-width: 650px) {
+  .footer__line {
+    display: block;
+  }
+}
 .footer__links {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
   height: 50px;
 }
-
-.about__company {
-  flex-basis: 33%;
-  margin-right: 110px;
+@media screen and (min-width: 650px) {
+  .footer__links {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
+.footer-logo {
+  flex-direction: column;
+  text-align: center;
+}
+@media screen and (min-width: 650px) {
+  .footer-logo {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+.footer-logo__img {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 650px) {
+  .footer-logo__img {
+    margin-right: 9px;
+    margin-bottom: 0;
+  }
+}
+.footer-logo__text {
+  margin-bottom: 31px;
+}
+@media screen and (min-width: 650px) {
+  .footer-logo__text {
+    margin-bottom: 0;
+  }
+}
+
+.about__company {
+  width: 73%;
+  margin-right: 0;
+}
 .downloads {
   display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 650px) {
+  .downloads {
+    justify-content: start;
+    margin-bottom: 0;
+  }
 }
 .downloads__img_appleapp {
   width: 135px;
@@ -714,10 +795,32 @@ button {
 
 .additional-navigation {
   display: flex;
-  flex-grow: 1;
+  flex-direction: column;
+  margin-right: 0;
+  margin-bottom: 30px;
+  padding-left: 15px;
+}
+@media screen and (min-width: 650px) {
+  .additional-navigation {
+    flex-direction: row;
+    width: 93%;
+    margin-right: 86px;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+}
+.additional-navigation__column {
+  flex: 1;
 }
 .additional-navigation__column:not(:last-child) {
-  margin-right: 90px;
+  margin-right: 0;
+  margin-bottom: 7px;
+}
+@media screen and (min-width: 650px) {
+  .additional-navigation__column:not(:last-child) {
+    margin-right: 29px;
+    margin-bottom: 0;
+  }
 }
 
 .nav-links__title {
@@ -737,6 +840,14 @@ button {
   color: rgba(43, 41, 45, 0.6);
 }
 
+.terms {
+  margin-bottom: 31px;
+}
+@media screen and (min-width: 650px) {
+  .terms {
+    margin-bottom: 0;
+  }
+}
 .terms__links {
   color: rgba(43, 41, 45, 0.6);
   font-size: 14px;
@@ -751,6 +862,12 @@ button {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  padding-bottom: 23px;
+}
+@media screen and (min-width: 650px) {
+  .social-links {
+    padding-bottom: 0;
+  }
 }
 .social-links__item:not(:last-child) {
   margin-right: 20px;
@@ -1733,11 +1850,12 @@ button {
 }
 
 .order-form {
-  flex-basis: 550px;
+  flex-basis: none;
   margin-left: 0;
 }
 @media screen and (min-width: 650px) {
   .order-form {
+    flex-basis: 550px;
     margin-left: -85px;
   }
 }
@@ -1774,7 +1892,7 @@ button {
   margin-bottom: 12px;
   padding: 17px 0 18px 15px;
   width: 100%;
-  max-width: 385px;
+  max-width: 100%;
   height: 48px;
   margin-right: 10px;
   border: 1px solid rgba(43, 41, 45, 0.231372549);
@@ -1782,6 +1900,7 @@ button {
 @media screen and (min-width: 650px) {
   .order-form__input {
     margin-bottom: 0;
+    max-width: 385px;
   }
 }
 .order-form__input::placeholder {

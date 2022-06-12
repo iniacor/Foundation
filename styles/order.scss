@@ -27,9 +27,10 @@
   }
 }
 .order-form {
-  flex-basis: 550px;
+  flex-basis: none;
   margin-left: 0;
   @include for-large-up {
+    flex-basis: 550px;
     margin-left: -85px;
   }
   &__title {
@@ -61,12 +62,13 @@
     margin-bottom: 12px;
     padding: 17px 0 18px 15px;
     width: 100%;
-    max-width: 385px;
+    max-width: 100%;
     height: 48px;
     margin-right: 10px;
     border: 1px solid $border-color;
     @include for-large-up {
       margin-bottom: 0;
+      max-width: 385px;
     }
     &::placeholder {
       color: $text-color-primary;
