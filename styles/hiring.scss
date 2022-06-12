@@ -1,8 +1,8 @@
 @import 'variables';
 
 .hiring {
-  padding-top: 106px;
-  padding-bottom: 110px;
+  @include adaptiv-padding-top(106, 50);
+  @include adaptiv-padding-bottom(110, 50);
 
   &__inner {
     margin: auto;
@@ -16,14 +16,20 @@
   }
 
   &__title {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+    @include for-large-up {
+      margin-bottom: 20px;
+    }
   }
 
   &__about-text {
     padding-top: 3px;
-    margin-bottom: 38px;
+    margin-bottom: 30px;
     font-size: 24px;
     line-height: 34px;
+    @include for-large-up {
+      margin-bottom: 38px;
+    }
   }
 
   &__link {
@@ -31,8 +37,8 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-bottom: 110px;
-    width: 247px;
+    margin-bottom: 39px;
+    width: 100%;
     height: 48px;
     font-weight: 700;
     font-size: 18px;
@@ -41,6 +47,10 @@
     color: #fff;
     background-color: $bc-color-darkblue;
     transition: all 0.5s;
+    @include for-large-up {
+      margin-bottom: 110px;
+      width: 247px;
+    }
 
     &:hover {
       color: #fff;
@@ -57,15 +67,35 @@
   }
 }
 .vacancy-block {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 20px;
+    width: 100%;
+    @include for-large-up {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 0;
+      width: 100%;
+    }
+  }
+
   &__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 26px;
+    padding: 0;
     border: 1px solid $border-color;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.2s;
+    @include for-large-up {
+      padding: 26px;
+    }
 
     &:not(:last-child) {
       margin-bottom: 17px;
@@ -83,15 +113,44 @@
   }
 
   &__title {
+    margin-bottom: 14px;
+    max-width: 200px;
     font-size: 22px;
     line-height: 28px;
+    @include for-large-up {
+      margin-bottom: 0;
+      max-width: 100%;
+    }
   }
 
   &__text {
-    margin-left: auto;
-    margin-right: 5px;
-    flex-basis: 250px;
+    margin-left: 0;
+    margin-right: 0;
+    flex-basis: none;
     color: $text-color-secondary;
+    @include for-large-up {
+      margin-left: auto;
+      margin-right: 5px;
+      flex-basis: 250px;
+      text-align: center;
+    }
+  }
+
+  &__button-inner {
+    height: 140px;
+    background-color: #d5d4d5;
+    display: flex;
+    align-items: center;
+    flex-basis: 50px;
+    justify-content: center;
+    border-radius: 0 8px 8px 0;
+    @include for-large-up {
+      justify-content: end;
+      height: 100%;
+      background-color: transparent;
+      flex-basis: none;
+      border-radius: 0;
+    }
   }
 
   &__btn {
