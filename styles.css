@@ -1698,19 +1698,48 @@ button {
 }
 
 .order {
-  padding-top: 73px;
-  padding-bottom: 73px;
+  padding-top: calc(
+    50px + 23 * ((100vw - 320px) / 1080)
+  );
+  padding-bottom: calc(
+    50px + 23 * ((100vw - 320px) / 1080)
+  );
   background-color: #f4f5f7;
 }
 .order__inner {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+@media screen and (min-width: 650px) {
+  .order__inner {
+    flex-direction: row;
+  }
+}
+.order__img {
+  margin-bottom: 40px;
+  padding-right: 50px;
+  padding-left: 50px;
+  max-width: 100%;
+}
+@media screen and (min-width: 650px) {
+  .order__img {
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+    min-width: auto;
+  }
 }
 
 .order-form {
   flex-basis: 550px;
-  margin-left: -85px;
+  margin-left: 0;
+}
+@media screen and (min-width: 650px) {
+  .order-form {
+    margin-left: -85px;
+  }
 }
 .order-form__title {
   margin-bottom: 19px;
@@ -1718,6 +1747,12 @@ button {
   font-size: 40px;
   line-height: 40px;
   letter-spacing: -0.25px;
+  text-align: center;
+}
+@media screen and (min-width: 650px) {
+  .order-form__title {
+    text-align: left;
+  }
 }
 .order-form__text {
   margin-bottom: 26px;
@@ -1726,16 +1761,28 @@ button {
 }
 .order-form__input-elements {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 650px) {
+  .order-form__input-elements {
+    flex-direction: row;
+  }
+}
 .order-form__input {
+  margin-bottom: 12px;
   padding: 17px 0 18px 15px;
   width: 100%;
   max-width: 385px;
   height: 48px;
   margin-right: 10px;
   border: 1px solid rgba(43, 41, 45, 0.231372549);
+}
+@media screen and (min-width: 650px) {
+  .order-form__input {
+    margin-bottom: 0;
+  }
 }
 .order-form__input::placeholder {
   color: #2b292d;
@@ -1750,6 +1797,15 @@ button {
   line-height: 22px;
   text-decoration: underline;
   color: #3141c5;
+}
+
+.active-button-order {
+  width: 100%;
+}
+@media screen and (min-width: 650px) {
+  .active-button-order {
+    width: 160px;
+  }
 }
 
 @media screen and (min-width: 650px) {

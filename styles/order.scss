@@ -1,24 +1,47 @@
 @import 'variables';
 
 .order {
-  padding-top: 73px;
-  padding-bottom: 73px;
+  @include adaptiv-padding-top(73, 50);
+  @include adaptiv-padding-bottom(73, 50);
   background-color: $bc-color-grey;
   &__inner {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    @include for-large-up {
+      flex-direction: row;
+    }
+  }
+  &__img {
+    margin-bottom: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+    max-width: 100%;
+    @include for-large-up {
+      margin-bottom: 0;
+      padding-right: 0;
+      padding-left: 0;
+      min-width: auto;
+    }
   }
 }
 .order-form {
   flex-basis: 550px;
-  margin-left: -85px;
+  margin-left: 0;
+  @include for-large-up {
+    margin-left: -85px;
+  }
   &__title {
     margin-bottom: 19px;
     font-weight: 700;
     font-size: 40px;
     line-height: 40px;
     letter-spacing: -0.25px;
+    text-align: center;
+    @include for-large-up {
+      text-align: left;
+    }
   }
   &__text {
     margin-bottom: 26px;
@@ -27,16 +50,24 @@
   }
   &__input-elements {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-bottom: 10px;
+    @include for-large-up {
+      flex-direction: row;
+    }
   }
   &__input {
+    margin-bottom: 12px;
     padding: 17px 0 18px 15px;
     width: 100%;
     max-width: 385px;
     height: 48px;
     margin-right: 10px;
     border: 1px solid $border-color;
+    @include for-large-up {
+      margin-bottom: 0;
+    }
     &::placeholder {
       color: $text-color-primary;
     }
@@ -51,5 +82,11 @@
     line-height: 22px;
     text-decoration: underline;
     color: $text-color-blue;
+  }
+}
+.active-button-order {
+  width: 100%;
+  @include for-large-up {
+    width: 160px;
   }
 }
