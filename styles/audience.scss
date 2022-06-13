@@ -73,6 +73,7 @@
     }
     &:hover {
       background-color: $bc-color-accent;
+      color: $bc-color-white;
     }
     &:not(:last-child) {
       margin-bottom: 15px;
@@ -106,6 +107,7 @@
 .audience-learn-more-button {
   margin-bottom: 40px;
   width: 100%;
+  color: $text-color-primary;
   @include for-large-up {
     margin-bottom: 0;
     width: auto;

@@ -1311,7 +1311,7 @@ button {
   font-weight: 700;
   font-size: 22px;
   line-height: 34px;
-  color: #edf8fb;
+  color: rgba(0, 161, 198, 0.0705882353);
 }
 @media screen and (min-width: 650px) {
   .communication__subtitle {
@@ -1510,6 +1510,7 @@ button {
 }
 .audience__item:hover {
   background-color: #3141c5;
+  color: #fff;
 }
 .audience__item:not(:last-child) {
   margin-bottom: 15px;
@@ -1544,6 +1545,7 @@ button {
 .audience-learn-more-button {
   margin-bottom: 40px;
   width: 100%;
+  color: #2b292d;
 }
 @media screen and (min-width: 650px) {
   .audience-learn-more-button {
@@ -1626,7 +1628,7 @@ button {
   cursor: pointer;
 }
 .feedback-slider .slick-dots button:hover {
-  background-color: #edf8fb;
+  background-color: rgba(0, 161, 198, 0.0705882353);
 }
 .feedback-slider .slick-dots li {
   display: flex;
