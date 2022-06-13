@@ -1311,7 +1311,7 @@ button {
   font-weight: 700;
   font-size: 22px;
   line-height: 34px;
-  color: #0189d1;
+  color: #edf8fb;
 }
 @media screen and (min-width: 650px) {
   .communication__subtitle {
@@ -1495,13 +1495,18 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 262px;
+  width: 100%;
   height: 300px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   transition: background-color 0.5s;
   cursor: pointer;
+}
+@media screen and (min-width: 650px) {
+  .audience__item {
+    width: 262px;
+  }
 }
 .audience__item:hover {
   background-color: #3141c5;
@@ -1621,7 +1626,7 @@ button {
   cursor: pointer;
 }
 .feedback-slider .slick-dots button:hover {
-  background-color: #0189d1;
+  background-color: #edf8fb;
 }
 .feedback-slider .slick-dots li {
   display: flex;
@@ -1846,8 +1851,8 @@ button {
 }
 .order__img {
   margin-bottom: 40px;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 45px;
+  padding-left: 45px;
   max-width: 100%;
 }
 @media screen and (min-width: 920px) {
@@ -1870,7 +1875,7 @@ button {
   }
 }
 .order-form__title {
-  margin-bottom: 19px;
+  margin-bottom: 18px;
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
@@ -1883,9 +1888,15 @@ button {
   }
 }
 .order-form__text {
-  margin-bottom: 26px;
+  width: 92%;
+  margin-bottom: 70px;
   font-size: 22px;
   line-height: 32px;
+}
+@media screen and (min-width: 650px) {
+  .order-form__text {
+    margin-bottom: 26px;
+  }
 }
 .order-form__input-elements {
   display: flex;
@@ -1915,6 +1926,7 @@ button {
 }
 .order-form__input::placeholder {
   color: #2b292d;
+  text-align: center;
 }
 .order-form__terms-description {
   font-size: 14px;
