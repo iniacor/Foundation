@@ -822,10 +822,14 @@ button {
 
 .terms {
   margin-bottom: 31px;
+  padding-top: 13px;
+  padding-bottom: 17px;
 }
 @media screen and (min-width: 650px) {
   .terms {
     margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 .terms__links {
@@ -841,12 +845,14 @@ button {
   display: flex;
   margin: 0;
   padding: 0;
+  padding-top: 0;
   padding-bottom: 23px;
   list-style-type: none;
 }
 @media screen and (min-width: 650px) {
   .social-links {
-    padding-bottom: 0;
+    padding-top: 17px;
+    padding-bottom: 16px;
   }
 }
 .social-links__item:not(:last-child) {
