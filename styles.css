@@ -1521,9 +1521,12 @@ button {
   }
 }
 .audience__img {
-  padding-bottom: 16px;
+  height: 100%;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 .audience__img-capture {
+  padding-bottom: 33px;
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
