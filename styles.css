@@ -19,7 +19,6 @@ a {
   color: #2b292d;
   text-decoration: none;
   transition: color 0.5s;
-  cursor: pointer;
 }
 a:hover {
   color: #3040c4;
@@ -109,7 +108,6 @@ a {
   color: #2b292d;
   text-decoration: none;
   transition: color 0.5s;
-  cursor: pointer;
 }
 a:hover {
   color: #3040c4;
@@ -253,12 +251,11 @@ button {
 .logo__description {
   display: none;
   color: rgba(43, 41, 45, 0.6);
-  font-size: calc(
-    12px + 6 * ((100vw - 320px) / 1080)
-  );
+  font-size: 12px;
 }
 @media screen and (min-width: 650px) {
   .logo__description {
+    font-size: 18px;
     display: block;
   }
 }
@@ -412,13 +409,15 @@ button {
 }
 
 .about {
-  padding-top: calc(
-    46px + 31 * ((100vw - 320px) / 1080)
-  );
-  padding-bottom: calc(
-    46px + 30 * ((100vw - 320px) / 1080)
-  );
+  padding-top: 46px;
+  padding-bottom: 46px;
   background-color: #f4f5f7;
+}
+@media screen and (min-width: 650px) {
+  .about {
+    padding-top: 77px;
+    padding-bottom: 76px;
+  }
 }
 .about__wrapper {
   display: flex;
@@ -474,7 +473,6 @@ a {
   color: #2b292d;
   text-decoration: none;
   transition: color 0.5s;
-  cursor: pointer;
 }
 a:hover {
   color: #3040c4;
@@ -861,12 +859,11 @@ button {
 
 .customers {
   padding-top: 0;
-  padding-bottom: calc(
-    48px + 58 * ((100vw - 320px) / 1080)
-  );
+  padding-bottom: 48px;
 }
 @media screen and (min-width: 650px) {
   .customers {
+    padding-bottom: 106px;
     padding-top: 30px;
   }
 }
@@ -1094,12 +1091,8 @@ button {
 }
 
 .inbox {
-  padding-top: calc(
-    50px + 63 * ((100vw - 320px) / 1080)
-  );
-  padding-bottom: calc(
-    50px + 34 * ((100vw - 320px) / 1080)
-  );
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #fcf0e3;
 }
 @media screen and (min-width: 650px) {
@@ -1240,12 +1233,8 @@ button {
 }
 
 .communication {
-  padding-top: calc(
-    50px + 60 * ((100vw - 320px) / 1080)
-  );
-  padding-bottom: calc(
-    50px + 60 * ((100vw - 320px) / 1080)
-  );
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 @media screen and (min-width: 650px) {
   .communication {
@@ -1411,12 +1400,8 @@ button {
 }
 
 .audience {
-  padding-top: calc(
-    50px + 60 * ((100vw - 320px) / 1080)
-  );
-  padding-bottom: calc(
-    50px + 60 * ((100vw - 320px) / 1080)
-  );
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: rgba(0, 161, 198, 0.0705882353);
 }
 @media screen and (min-width: 650px) {
@@ -1657,12 +1642,14 @@ button {
 }
 
 .hiring {
-  padding-top: calc(
-    50px + 56 * ((100vw - 320px) / 1080)
-  );
-  padding-bottom: calc(
-    50px + 60 * ((100vw - 320px) / 1080)
-  );
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 650px) {
+  .hiring {
+    padding-top: 106px;
+    padding-bottom: 110px;
+  }
 }
 .hiring__inner {
   margin: auto;
@@ -1831,13 +1818,15 @@ button {
 }
 
 .order {
-  padding-top: calc(
-    50px + 23 * ((100vw - 320px) / 1080)
-  );
-  padding-bottom: calc(
-    50px + 23 * ((100vw - 320px) / 1080)
-  );
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #f4f5f7;
+}
+@media screen and (min-width: 650px) {
+  .order {
+    padding-top: 73px;
+    padding-bottom: 73px;
+  }
 }
 .order__inner {
   display: flex;
@@ -1986,6 +1975,7 @@ button {
   flex-direction: column;
   align-items: center;
   padding: 0 15px;
+  margin: 0;
   margin-bottom: 40px;
 }
 .tip__image {

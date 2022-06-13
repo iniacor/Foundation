@@ -1,7 +1,7 @@
 @import 'variables';
 .inbox {
-  @include adaptiv-padding-top(113, 50);
-  @include adaptiv-padding-bottom(84, 50);
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: $bc-color-beige;
   @include for-large-up {
     padding-top: 113px;

@@ -1,7 +1,8 @@
 .customers {
   padding-top: 0;
-  @include adaptiv-padding-bottom(106, 48);
+  padding-bottom: 48px;
   @include for-large-up {
+    padding-bottom: 106px;
     padding-top: 30px;
   }
 

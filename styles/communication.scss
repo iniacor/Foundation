@@ -1,8 +1,8 @@
 @import 'variables';
 
 .communication {
-  @include adaptiv-padding-top(110, 50);
-  @include adaptiv-padding-bottom(110, 50);
+  padding-top: 50px;
+  padding-bottom: 50px;
   @include for-large-up {
     padding-top: 110px;
     padding-bottom: 110px;

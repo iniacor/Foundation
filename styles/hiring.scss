@@ -1,8 +1,12 @@
 @import 'variables';
 
 .hiring {
-  @include adaptiv-padding-top(106, 50);
-  @include adaptiv-padding-bottom(110, 50);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @include for-large-up {
+    padding-top: 106px;
+    padding-bottom: 110px;
+  }
 
   &__inner {
     margin: auto;

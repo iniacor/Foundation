@@ -71,8 +71,9 @@
   &__description {
     display: none;
     color: $text-color-secondary;
-    @include adaptiv-font(18, 12);
+    font-size: 12px;
     @include for-large-up {
+      font-size: 18px;
       display: block;
     }
   }

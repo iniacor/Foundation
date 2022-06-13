@@ -1,6 +1,10 @@
 .about {
-  @include adaptiv-padding-top(77, 46);
-  @include adaptiv-padding-bottom(76, 46);
+  padding-top: 46px;
+  padding-bottom: 46px;
+  @include for-large-up {
+    padding-top: 77px;
+    padding-bottom: 76px;
+  }
   background-color: #f4f5f7;
   &__wrapper {
     display: flex;

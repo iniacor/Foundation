@@ -1,9 +1,13 @@
 @import 'variables';
 
 .order {
-  @include adaptiv-padding-top(73, 50);
-  @include adaptiv-padding-bottom(73, 50);
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: $bc-color-grey;
+  @include for-large-up {
+    padding-top: 73px;
+    padding-bottom: 73px;
+  }
   &__inner {
     display: flex;
     flex-direction: column;
