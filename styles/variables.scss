@@ -23,22 +23,32 @@ $burger-btn-color-active: $text-color-active-learbtn;
 $md: 650px;
 $sm: 450px;
 $fs: 1300px;
+$tablet: 920px;
 
 @mixin for-feature-section {
   @media screen and (max-width: $fs) {
     @content;
   }
 }
+
 @mixin for-large-up {
   @media screen and (min-width: $md) {
     @content;
   }
 }
+
+@mixin for-tablet {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
 @mixin for-medium-up {
   @media screen and (min-width: $sm) {
     @content;
   }
 }
+
 @mixin for-small-up {
   @media screen and (max-width: $md) {
     @content;
@@ -86,8 +96,15 @@ $maxWidth: 1400;
 }
 @mixin adaptiv-padding-right($pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
-  $maxWidth: $maxWidth - 560;
+  $maxWidth: $maxWidth - 600;
   padding-right: calc(
-    #{$mobSize + px} + #{$addSize} * ((100vw - 560px) / #{$maxWidth})
+    #{$mobSize + px} + #{$addSize} * ((100vw - 600px) / #{$maxWidth})
+  );
+}
+@mixin adaptiv-padding-left($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 600;
+  padding-left: calc(
+    #{$mobSize + px} + #{$addSize} * ((100vw - 600px) / #{$maxWidth})
   );
 }

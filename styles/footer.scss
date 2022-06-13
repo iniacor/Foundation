@@ -167,9 +167,9 @@
     margin-bottom: 0;
   }
   &__links {
-    color: $text-color-secondary;
     font-size: 14px;
     line-height: 22px;
+    color: $text-color-secondary;
   }
 
   &__links:not(:last-child) {
@@ -181,8 +181,8 @@
   display: flex;
   margin: 0;
   padding: 0;
-  list-style-type: none;
   padding-bottom: 23px;
+  list-style-type: none;
   @include for-large-up {
     padding-bottom: 0;
   }

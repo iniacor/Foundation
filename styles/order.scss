@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    @include for-large-up {
+    @include for-tablet {
       flex-direction: row;
     }
   }
@@ -18,7 +18,7 @@
     padding-right: 50px;
     padding-left: 50px;
     max-width: 100%;
-    @include for-large-up {
+    @include for-tablet {
       margin-bottom: 0;
       padding-right: 0;
       padding-left: 0;
@@ -29,7 +29,7 @@
 .order-form {
   flex-basis: none;
   margin-left: 0;
-  @include for-large-up {
+  @include for-tablet {
     flex-basis: 550px;
     margin-left: -85px;
   }
@@ -40,7 +40,7 @@
     line-height: 40px;
     letter-spacing: -0.25px;
     text-align: center;
-    @include for-large-up {
+    @include for-tablet {
       text-align: left;
     }
   }
@@ -54,7 +54,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 10px;
-    @include for-large-up {
+    @include for-tablet {
       flex-direction: row;
     }
   }
@@ -66,7 +66,7 @@
     height: 48px;
     margin-right: 10px;
     border: 1px solid $border-color;
-    @include for-large-up {
+    @include for-tablet {
       margin-bottom: 0;
       max-width: 385px;
     }
@@ -88,7 +88,7 @@
 }
 .active-button-order {
   width: 100%;
-  @include for-large-up {
+  @include for-tablet {
     width: 160px;
   }
 }

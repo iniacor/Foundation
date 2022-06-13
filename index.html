@@ -18,10 +18,11 @@
 
 <body>
 
-  <header class="header">
+  <header class="header" id="home">
     <div class="header__top">
       <div class="logo">
-        <a href="#" class="logo__link">
+        <a href="#home" class="logo__link" aria-label="Go to home page">
+          <span class="sr-only">Go to home page</span>
           <img class="logo__img" src="img/logo.svg" alt="logo">
         </a>
         <div class="logo__text">
@@ -30,7 +31,7 @@
         </div>
       </div>
       <nav class="navigation">
-        <a class="navigation__item navigation__item_selected" href="#">Home</a>
+        <a class="navigation__item navigation__item_selected" href="#home">Home</a>
         <a class="navigation__item" href="#">Stories</a>
         <a class="navigation__item" href="#">Library<i class="navigation__arrow"></i></a>
       </nav>
@@ -43,29 +44,25 @@
         Get Started
       </button>
     </div>
-    <div class="container">
-    </div>
     <section class="headline">
-      <div class="container">
-        <div class="headline__wrapper">
-          <div class="headline__content">
-            <h1 class="headline__title">Build stunning websites & apps.</h1>
-            <p class="headline__description">Create live segments and target the right people for messages based on
-              their
-              behaviors.</p>
-            <div class="headline__buttons buttons">
-              <button class="headline__active-button active-button" type="submit">
-                Get Started
-              </button>
-              <span class="learn-more-button headline__learn-more-button"><a href="#"
-                  class="learn-more-button__link"></a>Learn
-                More</span>
-            </div>
+      <div class="headline__wrapper">
+        <div class="headline__content">
+          <h1 class="headline__title">Build stunning websites & apps.</h1>
+          <p class="headline__description">Create live segments and target the right people for messages based on
+            their
+            behaviors.</p>
+          <div class="headline__buttons buttons">
+            <button class="headline__active-button active-button" type="submit">
+              Get Started
+            </button>
+            <span class="learn-more-button headline__learn-more-button"><a href="#"
+                class="learn-more-button__link"></a>Learn
+              More</span>
           </div>
-          <img class="headline__banner"
-            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/ouch.png"
-            alt="Headline banner">
         </div>
+        <img class="headline__banner"
+          src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/ouch.png"
+          alt="Headline banner">
       </div>
     </section>
   </header>
@@ -472,7 +469,7 @@
       <div class="footer__navigation">
         <div class="about__company">
           <div class="logo footer-logo">
-            <a href="#" class="logo__link">
+            <a href="#home" class="logo__link">
               <img class="logo__img footer-logo__img" src="img/logo-dark.svg" alt="logo">
             </a>
             <div class="logo__text footer-logo__text">
