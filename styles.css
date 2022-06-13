@@ -1429,7 +1429,7 @@ button {
   padding-bottom: calc(
     50px + 60 * ((100vw - 320px) / 1080)
   );
-  background-color: rgba(0, 161, 198, 0.137254902);
+  background-color: rgba(0, 161, 198, 0.0705882353);
 }
 @media screen and (min-width: 650px) {
   .audience {
