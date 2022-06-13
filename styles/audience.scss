@@ -29,9 +29,12 @@
 
   &__title {
     margin-bottom: 18px;
-    letter-spacing: -0.5px;
+    font-size: 40px;
+    letter-spacing: -0.36px;
     @include for-large-up {
       margin-bottom: 30px;
+      font-size: 56px;
+      letter-spacing: -0.5px;
     }
   }
   &__text {
