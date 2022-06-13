@@ -12,10 +12,6 @@ h4 {
   line-height: 1;
 }
 
-h1 {
-  @include adaptiv-font(80, 50);
-}
-
 h2 {
   @include adaptiv-font(56, 40);
 }
