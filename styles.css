@@ -1281,20 +1281,19 @@ button {
   flex-basis: 462px;
 }
 .communication__decor {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+  margin-left: 0;
   margin-right: 0;
 }
 @media screen and (min-width: 650px) {
   .communication__decor {
     margin-right: 62px;
-  }
-}
-.communication__img {
-  max-width: 100%;
-}
-@media screen and (min-width: 650px) {
-  .communication__img {
-    max-width: auto;
+    margin-top: -12px;
+    margin-bottom: 0;
   }
 }
 .communication__subtitle {
@@ -1339,24 +1338,20 @@ button {
     margin-bottom: 87px;
   }
 }
-.communication__decor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
-}
-@media screen and (min-width: 650px) {
-  .communication__decor {
-    margin-bottom: 0;
-  }
-}
 .communication__img {
+  max-width: 100%;
   margin-bottom: 17px;
 }
 @media screen and (min-width: 650px) {
   .communication__img {
-    margin-bottom: 0;
+    max-width: auto;
   }
+}
+.communication__img-capture {
+  text-align: center;
+  color: rgba(43, 41, 45, 0.6);
+  font-size: 14px;
+  line-height: 22px;
 }
 .communication__decor-line {
   display: none;
@@ -1377,12 +1372,6 @@ button {
   .communication__decor-line_mobile {
     display: none;
   }
-}
-.communication__img-capture {
-  text-align: center;
-  color: rgba(43, 41, 45, 0.6);
-  font-size: 14px;
-  line-height: 22px;
 }
 .communication__bottom {
   display: flex;
