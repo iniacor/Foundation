@@ -8,7 +8,7 @@
   max-width: 1400px;
   padding-left: 0;
   padding-right: 0;
-  margin: 0 auto;
+  background-color: $bc-color-pink;
   @include for-large-up {
     padding-left: 130px;
     padding-right: 130px;

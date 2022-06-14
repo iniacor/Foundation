@@ -57,6 +57,7 @@
     @include for-large-up {
       flex-direction: row;
       align-items: center;
+      justify-content: space-between;
     }
   }
 }
@@ -162,6 +163,7 @@
 }
 
 .terms {
+  display: flex;
   margin-bottom: 31px;
   padding-top: 13px;
   padding-bottom: 17px;

@@ -550,7 +550,7 @@ button {
   max-width: 1400px;
   padding-left: 0;
   padding-right: 0;
-  margin: 0 auto;
+  background-color: #f3c6bd;
 }
 @media screen and (min-width: 650px) {
   .headline {
@@ -709,6 +709,7 @@ button {
   .footer__links {
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -818,6 +819,7 @@ button {
 }
 
 .terms {
+  display: flex;
   margin-bottom: 31px;
   padding-top: 13px;
   padding-bottom: 17px;
