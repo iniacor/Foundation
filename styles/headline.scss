@@ -83,6 +83,7 @@
   &__banner {
     display: block;
     max-width: 100%;
+    height: 100%;
     @include for-large-up {
       position: relative;
       top: 7px;
