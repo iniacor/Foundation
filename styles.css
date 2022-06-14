@@ -649,6 +649,19 @@ button {
   max-height: 389px;
   padding-top: 43px;
 }
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media screen and (min-width: 650px) {
+  .footer__inner {
+    flex-direction: row;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
 .footer__navigation {
   display: flex;
   flex-direction: column;
@@ -662,19 +675,6 @@ button {
     align-items: flex-start;
     margin-bottom: 54px;
     border-bottom: none;
-  }
-}
-.footer__inner {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
-  padding-right: 0;
-}
-@media screen and (min-width: 650px) {
-  .footer__inner {
-    flex-direction: row;
-    padding-left: 130px;
-    padding-right: 130px;
   }
 }
 .footer__description {
@@ -714,6 +714,10 @@ button {
   }
 }
 
+.about__company {
+  width: 73%;
+  margin-right: 0;
+}
 .footer-logo {
   flex-direction: column;
   text-align: center;
@@ -743,10 +747,6 @@ button {
   }
 }
 
-.about__company {
-  width: 73%;
-  margin-right: 0;
-}
 .downloads {
   display: flex;
   justify-content: center;
@@ -1280,22 +1280,6 @@ button {
   flex-direction: column;
   flex-basis: 462px;
 }
-.communication__decor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 0;
-  margin-bottom: 40px;
-  margin-left: 0;
-  margin-right: 0;
-}
-@media screen and (min-width: 650px) {
-  .communication__decor {
-    margin-right: 62px;
-    margin-top: -12px;
-    margin-bottom: 0;
-  }
-}
 .communication__subtitle {
   margin-bottom: 17px;
   font-weight: 700;
@@ -1338,6 +1322,32 @@ button {
     margin-bottom: 87px;
   }
 }
+.communication__decor-line {
+  display: none;
+}
+@media screen and (min-width: 650px) {
+  .communication__decor-line {
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.1019607843);
+    max-width: 150px;
+  }
+}
+.communication__decor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+  margin-left: 0;
+  margin-right: 0;
+}
+@media screen and (min-width: 650px) {
+  .communication__decor {
+    margin-right: 62px;
+    margin-top: -12px;
+    margin-bottom: 0;
+  }
+}
 .communication__img {
   max-width: 100%;
   margin-bottom: 17px;
@@ -1353,14 +1363,13 @@ button {
   font-size: 14px;
   line-height: 22px;
 }
-.communication__decor-line {
-  display: none;
+.communication__bottom {
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 650px) {
-  .communication__decor-line {
-    display: block;
-    border: 1px solid rgba(0, 0, 0, 0.1019607843);
-    max-width: 150px;
+  .communication__bottom {
+    flex-direction: row;
   }
 }
 .communication__decor-line_mobile {
@@ -1371,15 +1380,6 @@ button {
 @media screen and (min-width: 650px) {
   .communication__decor-line_mobile {
     display: none;
-  }
-}
-.communication__bottom {
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (min-width: 650px) {
-  .communication__bottom {
-    flex-direction: row;
   }
 }
 .communication__item {
@@ -1727,24 +1727,6 @@ button {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
-.vacancy-block__inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding-left: 20px;
-  width: 100%;
-}
-@media screen and (min-width: 650px) {
-  .vacancy-block__inner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 0;
-    width: 100%;
-  }
-}
 .vacancy-block__item {
   display: flex;
   justify-content: space-between;
@@ -1772,6 +1754,24 @@ button {
 }
 .vacancy-block__item:hover .vacancy-block__text {
   color: #fff;
+}
+.vacancy-block__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 20px;
+  width: 100%;
+}
+@media screen and (min-width: 650px) {
+  .vacancy-block__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    width: 100%;
+  }
 }
 .vacancy-block__title {
   margin-bottom: 14px;

@@ -3,6 +3,18 @@
 .footer {
   max-height: 389px;
   padding-top: 43px;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    @include for-large-up {
+      flex-direction: row;
+      padding-left: 130px;
+      padding-right: 130px;
+    }
+  }
+
   &__navigation {
     display: flex;
     flex-direction: column;
@@ -14,17 +26,6 @@
       align-items: flex-start;
       margin-bottom: 54px;
       border-bottom: none;
-    }
-  }
-  &__inner {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    padding-right: 0;
-    @include for-large-up {
-      flex-direction: row;
-      padding-left: 130px;
-      padding-right: 130px;
     }
   }
 
@@ -61,6 +62,13 @@
     }
   }
 }
+
+.about__company {
+  width: 73%;
+  margin-right: 0;
+  @include for-large-up {
+  }
+}
 .footer-logo {
   flex-direction: column;
   text-align: center;
@@ -81,13 +89,6 @@
     @include for-large-up {
       margin-bottom: 0;
     }
-  }
-}
-
-.about__company {
-  width: 73%;
-  margin-right: 0;
-  @include for-large-up {
   }
 }
 
