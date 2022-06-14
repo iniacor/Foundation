@@ -19,7 +19,10 @@
     @include for-large-up {
       flex-basis: 425px;
       flex-grow: 1;
-      margin-right: 163px;
+      margin-top: 26px;
+      margin-bottom: 13px;
+      margin-left: 64px;
+      margin-right: 133px;
       max-width: 100%;
     }
   }
@@ -45,8 +48,14 @@
   }
 
   &__content {
-    flex-basis: 519px;
-    flex-grow: 1;
+    // flex-basis: 519px;
+    // flex-grow: 1;
+    width: 100%;
+    padding-left: 0;
+    @include for-large-up {
+      width: 519px;
+      padding-left: 32px;
+    }
   }
 
   &__subtitle {
@@ -92,8 +101,12 @@
   }
 
   &__card {
+    width: 100%;
     background-color: $bc-color-white;
     padding: 29px;
+    @include for-large-up {
+      width: 519px;
+    }
   }
 }
 .blockquote {

@@ -1118,7 +1118,10 @@ button {
   .inbox__img {
     flex-basis: 425px;
     flex-grow: 1;
-    margin-right: 163px;
+    margin-top: 26px;
+    margin-bottom: 13px;
+    margin-left: 64px;
+    margin-right: 133px;
     max-width: 100%;
   }
 }
@@ -1146,8 +1149,14 @@ button {
   }
 }
 .inbox__content {
-  flex-basis: 519px;
-  flex-grow: 1;
+  width: 100%;
+  padding-left: 0;
+}
+@media screen and (min-width: 650px) {
+  .inbox__content {
+    width: 519px;
+    padding-left: 32px;
+  }
 }
 .inbox__subtitle {
   margin-bottom: 17px;
@@ -1195,8 +1204,14 @@ button {
   }
 }
 .inbox__card {
+  width: 100%;
   background-color: #fff;
   padding: 29px;
+}
+@media screen and (min-width: 650px) {
+  .inbox__card {
+    width: 519px;
+  }
 }
 
 .blockquote {
