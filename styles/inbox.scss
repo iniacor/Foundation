@@ -3,6 +3,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: $bc-color-beige;
+  overflow: hidden;
   @include for-large-up {
     padding-top: 113px;
     padding-bottom: 84px;
