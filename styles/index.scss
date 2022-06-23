@@ -13,6 +13,10 @@
 @import 'hiring.scss';
 @import 'order.scss';
 @import 'tips.scss';
+.page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
 body {
   display: flex;
