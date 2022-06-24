@@ -550,12 +550,13 @@ button {
 }
 @media screen and (min-width: 921px) {
   .headline {
-    padding-left: 130px;
+    padding-left: 125px;
     padding-right: 130px;
   }
 }
 .headline__wrapper {
   padding-bottom: 36px;
+  padding-top: 36px;
 }
 @media screen and (min-width: 921px) {
   .headline__wrapper {
@@ -654,8 +655,6 @@ button {
 @media screen and (min-width: 921px) {
   .footer__inner {
     flex-direction: row;
-    padding-left: 130px;
-    padding-right: 130px;
   }
 }
 .footer__navigation {
@@ -714,6 +713,7 @@ button {
   width: 73%;
   margin-right: 0;
 }
+
 .footer-logo {
   flex-direction: column;
   text-align: center;
@@ -773,7 +773,6 @@ button {
   flex-direction: column;
   margin-right: 0;
   margin-bottom: 30px;
-  padding-left: 15px;
 }
 @media screen and (min-width: 921px) {
   .additional-navigation {
@@ -798,6 +797,11 @@ button {
   }
 }
 
+@media screen and (min-width: 921px) {
+  .nav-links {
+    padding-left: 0;
+  }
+}
 .nav-links__title {
   margin-bottom: 20px;
   padding-top: 23px;
@@ -849,6 +853,7 @@ button {
   .social-links {
     padding-top: 17px;
     padding-bottom: 16px;
+    padding-left: 0;
   }
 }
 .social-links__item:not(:last-child) {
@@ -1995,13 +2000,21 @@ button {
 }
 
 .page {
-  max-width: 1400px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+@media screen and (min-width: 921px) {
+  .page {
+    max-width: 1400px;
+  }
+}
+
+.top-section {
+  background-color: #f3c6bd;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
   font-size: 18px;
   font-family: "Work Sans", sans-serif;

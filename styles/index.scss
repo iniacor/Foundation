@@ -14,13 +14,18 @@
 @import 'order.scss';
 @import 'tips.scss';
 .page {
-  max-width: 1400px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  @include for-large-up {
+    max-width: 1400px;
+  }
+}
+.top-section {
+  background-color: $bc-color-pink;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
   font-size: 18px;
   font-family: 'Work Sans', sans-serif;

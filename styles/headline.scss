@@ -10,11 +10,12 @@
   padding-right: 0;
   background-color: $bc-color-pink;
   @include for-large-up {
-    padding-left: 130px;
+    padding-left: 125px;
     padding-right: 130px;
   }
   &__wrapper {
     padding-bottom: 36px;
+    padding-top: 36px;
     @include for-large-up {
       padding-top: 77px;
       padding-bottom: 77px;

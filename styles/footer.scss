@@ -10,8 +10,6 @@
     padding-right: 0;
     @include for-large-up {
       flex-direction: row;
-      padding-left: 130px;
-      padding-right: 130px;
     }
   }
 
@@ -66,8 +64,6 @@
 .about__company {
   width: 73%;
   margin-right: 0;
-  @include for-large-up {
-  }
 }
 .footer-logo {
   flex-direction: column;
@@ -121,7 +117,6 @@
   flex-direction: column;
   margin-right: 0;
   margin-bottom: 30px;
-  padding-left: 15px;
   @include for-large-up {
     flex-direction: row;
     width: 93%;
@@ -143,6 +138,9 @@
 }
 
 .nav-links {
+  @include for-large-up {
+    padding-left: 0;
+  }
   &__title {
     margin-bottom: 20px;
     padding-top: 23px;
@@ -190,10 +188,12 @@
   padding: 0;
   padding-top: 0;
   padding-bottom: 23px;
+
   list-style-type: none;
   @include for-large-up {
     padding-top: 17px;
     padding-bottom: 16px;
+    padding-left: 0;
   }
   &__item:not(:last-child) {
     margin-right: 20px;
