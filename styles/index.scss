@@ -19,6 +19,7 @@
   max-width: 100%;
   @include for-large-up {
     max-width: 1400px;
+    margin: 0 auto;
   }
 }
 .top-section {
