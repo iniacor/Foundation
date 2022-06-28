@@ -60,8 +60,8 @@
     position: relative;
     margin-bottom: 8px;
     padding-left: 41px;
-    font-weight: 700;
     font-size: 22px;
+    font-weight: 700;
     line-height: 26px;
     color: #3142c6;
     &::before {
@@ -79,21 +79,21 @@
   }
 
   &__aquire-description {
-    margin-bottom: 20px;
     margin-top: 8px;
+    margin-bottom: 20px;
     padding: 0;
     line-height: 26px;
   }
 
   &__item {
-    font-weight: 700;
     font-size: 22px;
+    font-weight: 700;
     line-height: 26px;
     &_building {
       position: relative;
-      padding-left: 38px;
-      padding-bottom: 21px;
       margin-bottom: 25px;
+      padding-bottom: 21px;
+      padding-left: 38px;
       border-bottom: 1px solid #2b292d26;
       &::before {
         content: '';
@@ -111,8 +111,8 @@
 
     &_bucket {
       position: relative;
-      padding-left: 37px;
       padding-bottom: 21px;
+      padding-left: 37px;
       border-bottom: 1px solid #2b292d26;
       &::before {
         content: '';
@@ -136,8 +136,8 @@
       margin: auto;
     }
     position: absolute;
+    display: block;
     top: 0;
     right: 0;
-    display: block;
   }
 }

@@ -2,8 +2,8 @@
 @import 'global.scss';
 
 .header {
-  line-height: 25px;
   padding-top: 0;
+  line-height: 25px;
   background-color: $bc-color-pink;
   overflow-x: hidden;
   @include for-large-up {
@@ -13,23 +13,23 @@
   &__top {
     display: flex;
     justify-content: space-between;
-    height: 62px;
     width: 100%;
-    background-color: #fff;
+    height: 62px;
     padding: 0 10px;
+    background-color: #fff;
 
     @include for-large-up {
-      background-color: #f3c6bd;
       max-width: 1160px;
       margin: 0 auto;
+      background-color: #f3c6bd;
     }
 
     &_fix {
       position: fixed;
+      align-items: center;
       top: 0;
       right: 0;
       left: 0;
-      align-items: center;
       width: 100%;
       background-color: $bc-color-white;
       z-index: 10;
@@ -53,6 +53,7 @@
   &__link {
     display: flex;
   }
+
   &__img {
     width: 48px;
     height: 48px;
@@ -70,11 +71,11 @@
 
   &__description {
     display: none;
-    color: $text-color-secondary;
     font-size: 12px;
+    color: $text-color-secondary;
     @include for-large-up {
-      font-size: 18px;
       display: block;
+      font-size: 18px;
     }
   }
   &__description-footer {
@@ -84,10 +85,10 @@
 
 .navigation {
   position: absolute;
-  left: -10px;
-  right: -10px;
   display: flex;
   flex-direction: column;
+  right: -10px;
+  left: -10px;
   margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 25px;
@@ -107,27 +108,27 @@
     transition: all 0s;
   }
   &_active {
+    top: 0;
     transform: translateY(0);
     transition: all 0.6s;
-    top: 0;
   }
 
   &__item {
     display: block;
-    padding-bottom: 10px;
+    width: 100%;
     padding-top: 10px;
     padding-right: 50px;
+    padding-bottom: 10px;
     padding-left: 50px;
     text-align: center;
-    width: 100%;
     @include for-large-up {
-      padding-bottom: 0;
+      display: inline-block;
+      width: auto;
+      margin-top: 7px;
       padding-top: 0;
       padding-right: 0;
+      padding-bottom: 0;
       padding-left: 0;
-      width: auto;
-      display: inline-block;
-      margin-top: 7px;
       text-decoration: none;
     }
 
@@ -142,12 +143,12 @@
 
   &__arrow {
     display: none;
-    margin-left: 11px;
     padding-bottom: 2px;
-    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png');
-    background-repeat: no-repeat;
+    margin-left: 11px;
     width: 8px;
     height: 5px;
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png');
+    background-repeat: no-repeat;
     @include for-large-up {
       display: inline-block;
     }
@@ -172,9 +173,9 @@
 
   &__string {
     position: relative;
+    display: block;
     top: 0px;
     right: 0;
-    display: block;
     width: 18px;
     height: 2px;
     background-color: $burger-btn-color;
@@ -191,8 +192,8 @@
     &::after {
       content: '';
       position: absolute;
-      bottom: 4px;
       right: 0;
+      bottom: 4px;
       width: 18px;
       height: 2px;
       background-color: $burger-btn-color;

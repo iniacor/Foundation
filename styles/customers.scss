@@ -46,11 +46,13 @@
       width: auto;
       height: auto;
     }
+
     &:not(:last-child) {
       border-right: 1px solid $border-color;
       @include for-large-up {
         border-right: none;
       }
+
       @include for-medium-up {
         @include adaptiv-padding-right(30, 20);
       }

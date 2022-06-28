@@ -41,8 +41,8 @@
   }
 
   &__title {
-    font-size: 40px;
     margin-bottom: 18px;
+    font-size: 40px;
     letter-spacing: -0.36px;
     @include for-large-up {
       margin-bottom: 30px;
@@ -70,8 +70,8 @@
     display: none;
     @include for-large-up {
       display: block;
-      border: 1px solid #0000001a;
       max-width: 150px;
+      border: 1px solid #0000001a;
     }
   }
 
@@ -80,12 +80,12 @@
     flex-direction: column;
     align-items: center;
     margin-top: 0;
+    margin-right: 0;
     margin-bottom: 40px;
     margin-left: 0;
-    margin-right: 0;
     @include for-large-up {
-      margin-right: 62px;
       margin-top: -12px;
+      margin-right: 62px;
       margin-bottom: 0;
     }
   }
@@ -115,8 +115,8 @@
 
   &__decor-line_mobile {
     display: block;
-    border: 1px solid #0000001a;
     max-width: 150px;
+    border: 1px solid #0000001a;
     @include for-large-up {
       display: none;
     }

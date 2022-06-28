@@ -1,11 +1,12 @@
 .about {
   padding-top: 46px;
   padding-bottom: 46px;
+  background-color: #f4f5f7;
   @include for-large-up {
     padding-top: 77px;
     padding-bottom: 76px;
   }
-  background-color: #f4f5f7;
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -13,6 +14,7 @@
       flex-direction: row;
     }
   }
+
   &__title {
     margin-bottom: 11px;
     font-size: 22px;

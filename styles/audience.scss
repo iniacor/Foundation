@@ -9,9 +9,9 @@
   }
 
   &__top {
+    max-width: 555px;
     margin: 0 auto;
     margin-bottom: 0;
-    max-width: 555px;
     text-align: center;
     @include for-large-up {
       margin-bottom: 111px;
@@ -37,6 +37,7 @@
       letter-spacing: -0.5px;
     }
   }
+
   &__text {
     margin-bottom: 30px;
     font-size: 24px;
@@ -74,12 +75,13 @@
     @include for-large-up {
       width: 262px;
     }
+
     &:hover {
       background-color: $bc-color-accent;
       color: $bc-color-white;
-      box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15),
-        0px 11px 55px rgba(0, 0, 0, 0.07);
+      box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
     }
+
     &:not(:last-child) {
       margin-bottom: 15px;
       @include for-large-up {
@@ -87,6 +89,7 @@
       }
     }
   }
+
   @media (any-pointer: coarse) {
     .audience__item:hover {
       color: $bc-color-white;
@@ -108,9 +111,9 @@
 }
 
 .audience-button {
+  width: 100%;
   margin-right: 0;
   margin-bottom: 12px;
-  width: 100%;
   @include for-large-up {
     width: 160px;
     margin-right: 10px;
@@ -118,8 +121,8 @@
   }
 }
 .audience-learn-more-button {
-  margin-bottom: 40px;
   width: 100%;
+  margin-bottom: 40px;
   color: $text-color-primary;
   @include for-large-up {
     margin-bottom: 0;

@@ -6,8 +6,8 @@
   &__inner {
     display: flex;
     flex-direction: column;
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
     @include for-large-up {
       flex-direction: row;
     }
@@ -50,13 +50,13 @@
   &__links {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: space-between;
+    align-items: flex-start;
     height: 50px;
     @include for-large-up {
       flex-direction: row;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
     }
   }
 }
@@ -72,6 +72,7 @@
     flex-direction: row;
     text-align: left;
   }
+
   &__img {
     margin-right: 0;
     margin-bottom: 20px;
@@ -80,6 +81,7 @@
       margin-bottom: 0;
     }
   }
+
   &__text {
     margin-bottom: 31px;
     @include for-large-up {
@@ -96,11 +98,13 @@
     justify-content: start;
     margin-bottom: 0;
   }
+
   &__img_appleapp {
     width: 135px;
     height: 40px;
     cursor: pointer;
   }
+
   &__img_googleapp {
     width: 116px;
     height: 40px;
@@ -127,6 +131,7 @@
   &__column {
     flex: 1;
   }
+
   &__column:not(:last-child) {
     margin-right: 0;
     margin-bottom: 7px;
@@ -141,10 +146,12 @@
   @include for-large-up {
     padding-left: 0;
   }
+
   &__title {
     margin-bottom: 20px;
     padding-top: 23px;
   }
+
   &__list {
     margin: 0;
     padding: 0;
@@ -171,6 +178,7 @@
     padding-top: 0;
     padding-bottom: 0;
   }
+
   &__links {
     font-size: 14px;
     line-height: 22px;

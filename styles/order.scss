@@ -8,6 +8,7 @@
     padding-top: 73px;
     padding-bottom: 73px;
   }
+
   &__inner {
     display: flex;
     flex-direction: column;
@@ -17,11 +18,12 @@
       flex-direction: row;
     }
   }
+
   &__img {
+    max-width: 100%;
     margin-bottom: 40px;
     padding-right: 45px;
     padding-left: 45px;
-    max-width: 100%;
     @include for-tablet {
       margin-bottom: 0;
       padding-right: 0;
@@ -37,6 +39,7 @@
     flex-basis: 550px;
     margin-left: -85px;
   }
+
   &__title {
     margin-bottom: 18px;
     font-weight: 700;
@@ -48,6 +51,7 @@
       text-align: left;
     }
   }
+
   &__text {
     width: 92%;
     margin-bottom: 70px;
@@ -67,11 +71,12 @@
       flex-direction: row;
     }
   }
+
   &__input {
-    margin-bottom: 12px;
-    padding: 17px 0 18px 15px;
     width: 100%;
     max-width: 100%;
+    margin-bottom: 12px;
+    padding: 17px 0 18px 15px;
     height: 48px;
     margin-right: 10px;
     border: 1px solid $border-color;
