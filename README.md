@@ -3,7 +3,7 @@
 
 **[Site link](https://iniacor.github.io/Foundation/)**
 
-<p>Layout supports mobile (320px) and desktop (1400) versions</p>
+<p>Layout supports mobile (320px) and desktop (1400px) versions</p>
 
 ## The tech stack is:
 
