@@ -1,5 +1,3 @@
-@import 'variables';
-
 .tips {
   @include for-large-up {
     display: none;
