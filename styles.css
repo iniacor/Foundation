@@ -686,12 +686,13 @@ button {
 }
 .footer__line {
   display: none;
-  border: 1px solid #2b292d;
-  opacity: 0.1;
 }
 @media screen and (min-width: 921px) {
   .footer__line {
     display: block;
+    height: 1px;
+    background-color: #2b292d;
+    opacity: 0.1;
   }
 }
 .footer__links {
@@ -2022,6 +2023,7 @@ body {
   font-weight: 400;
   color: #2b292d;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 .container {

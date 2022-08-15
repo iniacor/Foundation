@@ -38,10 +38,11 @@
 
   &__line {
     display: none;
-    border: 1px solid $text-color-primary;
-    opacity: 0.1;
     @include for-large-up {
       display: block;
+      height: 1px;
+      background-color: $text-color-primary;
+      opacity: 0.1;
     }
   }
 
